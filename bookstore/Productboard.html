@@ -1,0 +1,110 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>書店購物網</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<style>
+    .img2{
+        margin-top: 5%;
+        width: 55%;
+        position: relative;left: 225px;
+        
+        
+        }
+        .feedback {
+        left: 25%;
+        position: relative;
+        width: 100%;
+        margin-bottom: 6%;
+        }
+        .feedback2 {
+        display: inline-block;
+        width: 50%;
+        }
+        input[name="name"] {
+        width: 25%;
+        margin: 2% 2% 2% 0px;
+        padding: 1%;
+        display: inline;
+        border-radius: 5px;
+        border: saddlebrown solid 4px;
+        transition: all 0.6s ease;
+        }
+        input[name="subject"] {
+        width: 100%;
+        padding: 1% 0px 1% 1%;
+        display: inline;
+        border-radius: 5px;
+        border: saddlebrown solid 4px;
+        transition: all 0.6s ease;
+        }
+        textarea {
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        margin-top: 10px;
+        border: saddlebrown solid 4px;
+        transition: all 0.6s ease;
+        }
+        
+</style>
+</head>
+<body>
+
+<div id="templatemo_container">
+	<div id="templatemo_menu">
+    	<ul>
+            <li><a href="index.html" class="current">首頁</a></li>
+            <li><a href="search.html">搜尋</a></li>
+            <li><a href="books.html">書籍</a></li>             
+            <li><a href="member.html">組員介紹</a></li> 
+            <li><a href="Productboard.html">留言板</a>
+			</li><li><a href="interface.html">加入會員</a></li>
+			</li><li><a href="interface.html">購物車</a></li>
+    	</ul>
+		<form method="POST" action="check.jsp">
+		<p style="text-align: right;"><font size="2">會員帳號：</font><input type="text" name="id" id="id" size="10">
+		<font size="2">會員密碼：</font><input type="password" name="pwd" id="pwd"  size="10">
+		<input type="submit" value="登入" name="submit"></p>
+	    </form>
+    </div>
+    
+    <div id="templatemo_header">
+    	<div id="templatemo_special_offers">
+        	<p>
+                <span>歡慶2021</span> 現在消費滿千送百&nbsp全館全面79折起
+        	</p>
+			<a href="#" style="margin-left: 50px;">詳情介紹...</a>
+        </div>
+        
+        
+        <div id="templatemo_new_books">
+        	<ul>
+                <li>演算法圖鑑：26種演算法 + 7種資料結構</li>
+                <li>鬼滅之刃 21</li>
+                <li>回家：案簿錄．浮生 卷一</li>
+            </ul>
+            <a href="#" style="margin-left: 50px;">詳情介紹...</a>
+        </div>
+    </div> 
+    
+    <section>
+        <img class="img2" src="images/feedback.jpg"  alt="素材">
+        <div class="feedback">
+            <form class="feedback2" action="mailto:a3737441@gmail.com" method="POST" enctype="text/plain" accept-charset="UTF-8">
+                <input type="text" name="name" placeholder=" 姓名 NAME">
+                <input type="text" name="subject" placeholder=" 主旨 SUBJECT">
+                <textarea name="content" placeholder=" 內容 CONTENT"></textarea>
+                <input type="submit" name="sub" id="sub">
+            </form>
+        </div>
+        
+    </section>
+
+
+</body>
+</html>
